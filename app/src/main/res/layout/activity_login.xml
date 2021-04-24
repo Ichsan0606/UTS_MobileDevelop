@@ -8,12 +8,13 @@
     tools:context=".activity.login.LoginActivity">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_above="@id/etLoginUsername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/normal"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100"
+        android:layout_marginBottom="137dp"
+        android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etLoginUsername"
@@ -54,6 +55,18 @@
         android:background="@android:color/darker_gray"
         android:hint="Daftar sekarang"
         android:padding="@dimen/normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100"
+        android:layout_marginTop="180"
+        android:text="BukuKu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
