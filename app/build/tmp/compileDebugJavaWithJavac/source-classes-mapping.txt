@@ -1,0 +1,2 @@
+uts/i18090115/ichsan/BuildConfig.java
+ uts.i18090115.ichsan.BuildConfig
