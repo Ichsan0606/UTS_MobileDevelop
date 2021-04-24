@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".activity._main.MainActivity">
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_centerInParent="true"
-        android:background="@color/colorFree"
+        android:background="@color/colorSmooth"
         android:padding="@dimen/normal">
 
 

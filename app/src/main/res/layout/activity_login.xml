@@ -4,25 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/far"
-    android:background="@drawable/Background"
+    android:background="@drawable/background"
     tools:context=".activity.login.LoginActivity">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@id/etLoginUsername"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="137dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="70dp"
         android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etLoginUsername"
-        android:hint="username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
         android:background="@drawable/background_light"
-        android:layout_centerInParent="true"/>
+        android:hint="username" />
 
 
     <EditText
@@ -38,15 +43,16 @@
 
     <Button
         android:id="@+id/btLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/etLoginPassword"
         android:layout_alignEnd="@id/etLoginPassword"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="66dp"
         android:layout_marginEnd="2dp"
-        android:background="@color/cardview_dark_background"
+        android:background="#0C728C"
         android:text="Masuk"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/goRegister"
@@ -54,21 +60,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etLoginPassword"
         android:layout_alignBaseline="@id/btLogin"
-        android:background="@android:color/darker_gray"
-        android:hint="Daftar sekarang"
-        android:padding="@dimen/normal" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="180dp"
-        android:text="BukuKu"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="30sp" />
+        android:background="#B5BCBB"
+        android:padding="@dimen/normal"
+        android:text="Daftar sekarang"
+        android:textColor="@android:color/black" />
 
 
 </RelativeLayout>
