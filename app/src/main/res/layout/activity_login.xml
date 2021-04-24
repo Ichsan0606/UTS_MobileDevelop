@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/far"
-    android:background="@android:color/white"
+    android:background="@drawable/Background"
     tools:context=".activity.login.LoginActivity">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_height="100dp"
         android:layout_above="@id/etLoginUsername"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="100"
+        android:layout_marginStart="100dp"
         android:layout_marginBottom="137dp"
         android:src="@drawable/logo" />
 
@@ -24,16 +24,17 @@
         android:background="@drawable/background_light"
         android:layout_centerInParent="true"/>
 
+
     <EditText
         android:id="@+id/etLoginPassword"
-        android:hint="password"
-        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_light"
-        android:layout_marginTop="@dimen/normal"
+        android:layout_below="@id/etLoginUsername"
+        android:layout_marginTop="23dp"
         android:layout_marginBottom="@dimen/high"
-        android:layout_below="@id/etLoginUsername"/>
+        android:background="@drawable/background_light"
+        android:hint="password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btLogin"
@@ -41,10 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etLoginPassword"
         android:layout_alignEnd="@id/etLoginPassword"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="2dp"
         android:background="@color/cardview_dark_background"
         android:text="Masuk"
         android:textColor="@android:color/background_light" />
-
 
     <TextView
         android:id="@+id/goRegister"
@@ -62,8 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="100"
-        android:layout_marginTop="180"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="180dp"
         android:text="BukuKu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="30sp" />
